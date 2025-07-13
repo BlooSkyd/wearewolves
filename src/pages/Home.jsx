@@ -4,8 +4,10 @@ import howling from '../assets/wolf-howling.mp3'
 import slash from '../assets/slash.mp3'
 import '../styles/index.css'
 import '../styles/Home.css'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+    const navigate = useNavigate();
     const playGrr = () => {
         const audio = new Audio(grr);
         audio.play();
@@ -23,6 +25,7 @@ function Home() {
     }
     const handleConfiguratorClick = () => {
         playGrr();
+        navigate('/configurator');
     }
     const handleAssistantClick = () => {
         playSlash();
@@ -37,16 +40,12 @@ function Home() {
                 <img src={werewolf} className="logo" onClick={handleLogoClick} />
             </div>
             <div className="buttons">
-                <a>
-                    <button onClick={handleConfiguratorClick}>➡️ Configurator</button>
-                </a>
+                <button onClick={handleConfiguratorClick}>➡️ Configurator</button>
                 <span style={{ display: 'inline-block', width: '2em' }}></span>
-                <a>
-                    <button onClick={handleAssistantClick}>❓ Assistant</button>
-                </a>
+                <button onClick={handleAssistantClick}>❓ Assistant</button>
             </div>
         </>
     )
 }
 
-export default Home
+export default Home;
