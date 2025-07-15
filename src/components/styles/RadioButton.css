@@ -1,0 +1,36 @@
+@import './constants.css';
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  margin: 1em;
+  display: block;
+  width: 10em;
+  padding: 10px 20px;
+  border: 2px solid var(--color-txt-light);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color-btn-unselected);
+  color: var(--color-txt-light);
+  transition: background-color ease, color 0.3s ease;
+  user-select: none;
+  font-weight: bold;
+}
+
+/* Hovering label */
+.radio-label:hover {
+  background-color: var(--color-btn-primary);
+  border: none;
+  color: var(--color-txt-light);
+  box-shadow: 0 0 10px 5px rgba(220,217,245,0.75);
+  -webkit-box-shadow: 0 0 10px 5px rgba(220,217,245,0.75);
+  -moz-box-shadow: 0 0 10px 5px rgba(220,217,245,0.75);
+}
+
+/* Selected label */
+.radio-input:checked + .radio-label {
+  background-color: var(--color-txt-light);
+  color: var(--color-txt-dark);
+}
