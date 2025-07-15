@@ -2,8 +2,8 @@ import werewolf from '../assets/werewolf.png'
 import grr from '../assets/grr.mp3'
 import howling from '../assets/wolf-howling.mp3'
 import slash from '../assets/slash.mp3'
-import '../styles/index.css'
-import '../styles/Home.css'
+import './styles/index.css'
+import './styles/Home.css'
 import { useNavigate } from 'react-router-dom';
 
 function Home() {

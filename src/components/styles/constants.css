@@ -1,0 +1,14 @@
+:root {
+    --color-btn-primary: #0466C8;
+    --color-btn-secondary: #023E7D;
+    --color-btn-unselected: #393939;
+    --color-btn-selected: #cdd6f1;
+    --color-btn-danger: #c52222;
+
+    --color-bg-main: #001233;
+    --color-bg-info: #33415C;
+    --color-bg-lighter: #001845;
+
+    --color-txt-light: #dfe2fb;
+    --color-txt-dark: #131327;
+}
